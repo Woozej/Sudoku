@@ -33,7 +33,7 @@ public class View extends JFrame {
     	//stworzenie formattera aby mo¿na by³o dodaæ tylko cyfry
     	NumberFormat format = NumberFormat.getInstance();
 		NumberFormatter formatter = new NumberFormatter(format) {
-    		
+    		//Override aby mo¿na by³o kasowaæ wartoœæ
     		@Override
 			public Object stringToValue(String text) throws ParseException{
     			try {
